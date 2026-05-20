@@ -2,69 +2,16 @@ import streamlit as st
 
 # Configuração da página
 st.set_page_config(
-    page_title="Orçamento de PC com IA",
-    page_icon="🐰",
+    page_title="Orçamento de PC do perigo",
+    page_icon="🖥️",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
 
-# CSS customizado para um toque "bonitinho"
-st.markdown(
-    """
-    <style>
-    .main {
-        background-color: #f9f7f3;
-    }
-    .stApp {
-        background: linear-gradient(135deg, #f5f0ff 0%, #ffe9e9 100%);
-    }
-    div.block-container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-    h1 {
-        font-family: 'Comic Neue', 'Segoe UI Emoji', sans-serif;
-        color: #6c4ab6;
-        text-align: center;
-    }
-    .stButton > button {
-        background-color: #ffb347;
-        color: white;
-        border-radius: 20px;
-        font-weight: bold;
-    }
-    .stNumberInput input {
-        border-radius: 15px;
-    }
-    .budget-card {
-        background-color: #fff0db;
-        border-radius: 20px;
-        padding: 1rem;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .total-card {
-        background-color: #d9e8f5;
-        border-radius: 20px;
-        padding: 1rem;
-        text-align: center;
-    }
-    .warning {
-        background-color: #ffe0e0;
-        border-left: 8px solid #ff4b4b;
-    }
-    .success {
-        background-color: #e0ffe0;
-        border-left: 8px solid #4caf50;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
 # Cabeçalho fofo
-st.markdown("# 🤖🐰 Bunner Bonitinho de IA")
+st.markdown("# 🤖🖥️ Loja do Perigo")
 st.markdown("### 💸 Calculadora de Orçamento para Montagem de PC")
+st.markdown("Onde o seu sonho de ter um pc pode ser realizado por nós, basta ter o dinheiro")
 st.markdown("Preencha o valor **disponível** e os preços de cada componente. O total será atualizado automaticamente.")
 
 # Coluna para o orçamento disponível
@@ -90,13 +37,13 @@ componentes = {
     "memoria_ram": "🧠 Memória RAM",
     "processador": "⚡ Processador",
     "placa_video": "🎮 Placa de vídeo",
-    "armazenamento": "💾 Armazenamento (SSD/HDD)",
+    "armazenamento": "💾 Armazenamento (SSD/HD)",
     "fonte": "🔋 Fonte de alimentação",
     "gabinete": "📦 Gabinete",
     "cooler": "❄️ Cooler",
     "monitor": "🖥️ Monitor",
     "teclado_mouse": "⌨️🖱️ Teclado + Mouse",
-    "sistema_operacional": "🪟 Sistema operacional",
+    "sistema_operacional": "💿 Sistema operacional",
     "outros_perifericos": "🎧 Outros periféricos",
 }
 
@@ -170,6 +117,6 @@ else:
 # Rodapé fofinho
 st.markdown("---")
 st.markdown(
-    "<p style='text-align: center; font-size: 0.8rem;'>🐣 Feito com carinho por IA Bunner • Ajuste os valores e veja o total em tempo real</p>",
+    "<p style='text-align: center; font-size: 0.8rem;'>🐣 Feito com carinho para seu sonho gamer • Ajuste os valores e veja o total em tempo real</p>",
     unsafe_allow_html=True,
 )
