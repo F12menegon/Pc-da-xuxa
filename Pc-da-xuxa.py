@@ -9,9 +9,9 @@ st.set_page_config(
 )
 
 # Cabeçalho fofo
-st.markdown("# 🤖🖥️ Loja do Perigo")
+st.markdown("# 🖥️ Loja do Perigo Gamer")
 st.markdown("### 💸 Calculadora de Orçamento para Montagem de PC")
-st.markdown("Onde o seu sonho de ter um pc pode ser realizado por nós, basta ter o dinheiro")
+st.markdown("Onde o seu sonho de ter um Pc pode ser realizado por nós, basta ter o dinheiro")
 st.markdown("Preencha o valor **disponível** e os preços de cada componente. O total será atualizado automaticamente.")
 
 # Coluna para o orçamento disponível
